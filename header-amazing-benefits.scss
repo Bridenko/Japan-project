@@ -1,0 +1,299 @@
+
+/* HEADER - START */
+
+header {
+    position: fixed;
+    z-index: 99;
+   
+    width: 100%;
+    margin-bottom: 177px;
+    
+    border-color: black;
+    
+    transition: .2s linear;
+}
+
+/* HEADER (FOR JAVA SCRIPT) */
+
+.header-background-opacity-25 {
+    background-color: #0e1d283d;
+    box-shadow: 0px 0px 20px #c4c4c438;
+}
+
+.header-background-opacity-50 {
+    background-color: #0e1d2883;
+    box-shadow: 0px 0px 20px #c4c4c47e;
+}
+
+.header-background-opacity-75 {
+    background-color: #0e1d28a2;
+    box-shadow: 0px 0px 20px #c4c4c4af;
+}
+
+.header-background-opacity-100 {
+    background-color: #0e1d28;
+    box-shadow: 0px 0px 20px #c4c4c4;
+}
+
+/* HEADER (FOR JAVA SCRIPT) */
+
+.background-picture {
+    min-height: 100vh;
+    min-width: 100vh;
+    
+    margin-bottom: 150px;
+
+    background: url(/img/1b_bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header-wrapper {
+    
+    max-width: 1062px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width:1261px) {
+    .header-wrapper {
+        padding: 0px 20px;
+    }
+}
+.icon {
+    
+}
+
+.header-icon {
+
+}
+
+.main-menu {
+
+	&__list {
+        display: flex;
+        flex-wrap: wrap;
+	}
+	
+	&__item {
+        margin-left: 82px;
+        padding: 10px 20px;
+
+        border-radius: 8px;
+        color: white;
+	}
+
+    &__item:hover {
+        
+        opacity: 1;
+        border-bottom: 1px solid rgb(211, 211, 211);
+        border-radius: 20px;
+        transition: .5s;
+    }
+
+    &__item:active {
+        border-bottom: 1px solid white;
+        border-radius: 15px;
+        opacity: .70;
+    }
+
+}
+
+/* HEADER - END */
+
+
+/* DISCOVER AMAZING - START */
+
+
+.discover-amazing {
+
+    max-width: 1062px;
+    margin: 0 auto;
+
+	&__title {
+        padding-top: 230px;
+        margin-bottom: 22px;
+	}
+	
+	&__text {
+        max-width: 546px;
+        margin-bottom: 60px;
+
+        color: white;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+	}
+	
+	&__input-form {
+        display: flex;
+        margin-bottom: 150px;
+	}
+
+}
+
+.main-title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: white;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+
+.is-text-shadow {
+
+}
+
+.text-input-field {
+    width: 220px;
+    padding-top: 15px;
+
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+
+    background: transparent;
+    
+    &::placeholder {
+        color: white;
+    }
+}
+
+.is-input-weight {
+    width: 211px;
+}
+
+.input-your-like {
+    margin-right: 60px;
+
+    text-indent: 35px;
+
+    border: 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.671);
+    background: url(/img/circle-ico.svg) 0px 17px no-repeat;
+}
+
+.input-your-like:hover {
+    
+    background: url(/img/circle-ico.svg) 4px 17px no-repeat;
+    border-bottom: 1px solid white;
+    transition: .3s;
+}
+
+.input-button {
+    
+}
+
+.button {
+    padding: 15px 39px;
+
+    font-size: 24px;
+    font-weight: 500;
+
+    color: white;
+    background-color: #1B7DFF;
+}
+
+.button:hover {
+    padding: 15px 43px;
+    transition: .5s;
+}
+
+.button:active {
+    background-color: #145bb8;
+}
+
+
+/* DISCOVER AMAZING - END */
+
+
+/* BENEFITS - START */
+
+
+.benefits {
+    width: 100vh;
+    max-width: 1262px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    
+
+    box-shadow: 0px 0px 20px #dddddd;
+}
+
+.benefits-container {
+    padding: 100px;
+    
+}
+
+.benefits-title {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.title {
+    margin-bottom: 120px;
+
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.benefits-articles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits-article {
+    padding-right: 55px;
+    display: flex;
+    flex-direction: column;
+    
+    &:last-child {
+        padding-right: 0px;
+    }
+}
+
+.benefits-icon {
+    margin-bottom: 37px;
+}
+
+.article-title {
+    margin-bottom: 26px;
+}
+
+.benefits-text {
+    margin-bottom: 39px;
+    max-width: 317px;
+    align-self: auto;
+    flex: 1 1 auto;
+}
+
+.button-arrow {
+	&__link {
+        display: block;
+
+        color: #006DFE;
+        background: url(/img/about_ico_share.svg) 130px 8px no-repeat;
+	}
+
+    &__link:hover {
+        background: url(/img/about_ico_share.svg) 140px 8px no-repeat;
+        letter-spacing: 1px;
+        transition: .5s;
+    }
+}
+
+
+.benefits-personal {
+
+}
+
+.benefits-promoting {
+
+}
+
+/* BENEFITS - END */

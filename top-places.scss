@@ -1,0 +1,89 @@
+
+/* TOP PLACES - START */
+
+.top-places {
+
+    &__title {
+        margin-top: 150px;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.title {
+
+}
+
+.visit-card {
+    max-width: 377px;
+    display: flex;
+    flex-direction: column;
+
+    &__visual-part {
+        position: relative;
+        margin-bottom: 45px;
+        color: white;
+    }
+
+    &__picture {
+   
+    }
+
+    &__text {
+        margin-bottom: 43px;
+        flex: 1 1 auto;
+    }
+
+    &__button {
+        margin-bottom: 62px;
+    }
+
+    &__link {
+        padding: 12px 19px;
+        background-color: #006DFE;
+        color: white;
+        box-shadow: 2px 4px 10px grey;
+    }
+
+    &__link:hover {
+        background-color: #003375;
+        color: white;
+        transition: .5s;
+    }
+}
+.picture-sign {
+    display: flex;
+
+    &__town {
+        position: absolute;
+        bottom: 15px;
+        left: 35px;
+    }
+
+    &__likes-comments {
+        
+        position: absolute;
+        bottom: 15px;
+        right: 25px;
+        display: flex;
+    }
+
+    &__likes {
+        padding-left: 25px;
+        background: url(/img/likes.svg) 0px 5px no-repeat;
+        background-size: 16px;
+    }
+
+    &__comments {
+        margin-left: 20px;
+        padding-left: 25px;
+        background: url(/img/comments.svg) 0px 5px no-repeat;
+        background-size: 16px;
+    }
+}
+
+/* TOP PLACES - END */
