@@ -164,7 +164,7 @@ header {
     min-height: 100vh;
     margin-bottom: 150px;
 
-    background: url(/img/1b_bg.jpg) no-repeat center;
+    background: url(./img/1b_bg.jpg) no-repeat center;
     background-size: 1500px ;
 }
 
@@ -209,7 +209,7 @@ header {
 
     border: 0px;
     border-bottom: 2px solid rgb(158, 158, 158);
-    background: url(/img/circle-ico.svg) 0px 17px no-repeat;
+    background: url(./img/circle-ico.svg) 0px 17px no-repeat;
 
     transition: .2s;
 }
@@ -342,11 +342,11 @@ header {
         transition: letter-spacing .5s;
         transition: .5s;
         color: #006DFE;
-        background: url(/img/about_ico_share.svg) 130px 8px no-repeat;
+        background: url(./img/about_ico_share.svg) 130px 8px no-repeat;
 	}
 
     &__link:hover {
-        background: url(/img/about_ico_share.svg) 140px 8px no-repeat;
+        background: url(./img/about_ico_share.svg) 140px 8px no-repeat;
         letter-spacing: 1px;
         transition: letter-spacing .5s;
         transition: .5s;
