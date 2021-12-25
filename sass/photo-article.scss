@@ -30,7 +30,7 @@
         display: block;
 
         color: #006DFE;
-        background: url(./img/about_ico_share.svg) 172px 8px no-repeat;
+        background: url(../img/about_ico_share.svg) 172px 8px no-repeat;
 
         transition: 0.5s;
     }
@@ -39,19 +39,19 @@
         display: block;
 
         color: #006DFE;
-        background: url(./img/about_ico_share.svg) 208px 8px no-repeat;
+        background: url(../img/about_ico_share.svg) 208px 8px no-repeat;
 
         transition: 0.5s;
     }
 
     &__link-1:hover {
-        background: url(./img/about_ico_share.svg) 187px 8px no-repeat;
+        background: url(../img/about_ico_share.svg) 187px 8px no-repeat;
         letter-spacing: 1px;
         transition: 0.5s;
     }
     
     &__link-2:hover {
-        background: url(./img/about_ico_share.svg) 223px 8px no-repeat;
+        background: url(../img/about_ico_share.svg) 223px 8px no-repeat;
         letter-spacing: 1px;
         transition: 0.5s;
     }
