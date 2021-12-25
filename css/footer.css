@@ -1,6 +1,6 @@
 /* FOOTER - START */
 .footer {
-  width: 100vh;
+  width: 100%;
   background-color: #0E1D28;
 }
 
@@ -27,6 +27,7 @@
   color: white;
   border-radius: 5px;
   padding-left: 15px;
+  transition: 0.5s;
 }
 .footer-menu__title {
   color: white;

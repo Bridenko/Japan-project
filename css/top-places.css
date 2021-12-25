@@ -30,6 +30,7 @@
   background-color: #006DFE;
   color: white;
   box-shadow: 2px 4px 10px grey;
+  transition: 0.5s;
 }
 .visit-card__link:hover {
   background-color: #003375;

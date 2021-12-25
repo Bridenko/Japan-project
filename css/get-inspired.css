@@ -1,6 +1,10 @@
 /* GET INSPIRED - START */
+.main {
+  width: 100vw;
+}
+
 .main-container {
-  width: 100vh;
+  width: 100%;
   max-width: 1262px;
   margin: 0 auto;
 }

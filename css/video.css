@@ -1,6 +1,6 @@
 /* VIDEO - START */
 .video {
-  width: 100vh;
+  min-width: 100vh;
 }
 
 .video-wrapper {
