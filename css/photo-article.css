@@ -4,6 +4,10 @@
   justify-content: space-between;
   margin-bottom: 58px;
 }
+.photo-and-article__picture {
+  border-radius: 7px;
+  box-shadow: 0 0 10px #7e7e7e;
+}
 .photo-and-article__article {
   max-width: 597px;
   padding: 40px;
@@ -30,12 +34,12 @@
 .photo-and-article__link-1:hover {
   background: url(../img/about_ico_share.svg) 187px 8px no-repeat;
   letter-spacing: 1px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .photo-and-article__link-2:hover {
   background: url(../img/about_ico_share.svg) 223px 8px no-repeat;
   letter-spacing: 1px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .sub-title {
@@ -43,4 +47,52 @@
   font-weight: 500;
 }
 
+@media (max-width: 1301px) {
+  .photo-and-article {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 1261px) {
+  .photo-and-article {
+    flex-direction: column;
+  }
+
+  .is-reverce {
+    flex-direction: column-reverse;
+  }
+
+  .photo-and-article__article {
+    max-width: 100%;
+  }
+}
+@media (max-width: 730px) {
+  .photo-and-article {
+    margin-bottom: 0px;
+  }
+
+  .photo-and-article__title {
+    margin-bottom: 30px;
+  }
+
+  .photo-and-article__text {
+    margin-bottom: 30px;
+  }
+
+  .photo-and-article__article {
+    padding: 20px 20px 60px 20px;
+  }
+}
+@media (max-width: 350px) {
+  .photo-and-article__link-1 {
+    background: url(../img/about_ico_share.svg) 162px 8px no-repeat;
+  }
+
+  .photo-and-article__link-2 {
+    background: url(../img/about_ico_share.svg) 195px 8px no-repeat;
+  }
+
+  .photo-and-article__article {
+    padding: 20px 0px 60px 0px;
+  }
+}
 /* PHOTO AND ARTICLE - END */

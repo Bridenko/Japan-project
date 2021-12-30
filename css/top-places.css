@@ -1,6 +1,7 @@
 /* TOP PLACES - START */
 .top-places__title {
   margin-top: 150px;
+  line-height: 42px;
 }
 .top-places__container {
   display: flex;
@@ -18,6 +19,10 @@
   margin-bottom: 45px;
   color: white;
 }
+.visit-card__picture {
+  border-radius: 7px;
+  box-shadow: 0 0 10px #7e7e7e;
+}
 .visit-card__text {
   margin-bottom: 43px;
   flex: 1 1 auto;
@@ -28,18 +33,30 @@
 .visit-card__link {
   padding: 12px 19px;
   background-color: #006DFE;
+  border-radius: 5px;
   color: white;
   box-shadow: 2px 4px 10px grey;
-  transition: 0.5s;
+  transition: 0.3s;
+  display: inline-block;
 }
 .visit-card__link:hover {
   background-color: #003375;
   color: white;
-  transition: 0.5s;
+  transition: 0.3s;
+  transform: scale(1.15, 1.15);
+}
+
+.picture-sign__opacity-line {
+  border-radius: 0 0 7px 7px;
 }
 
 .picture-sign {
   display: flex;
+}
+.picture-sign__opacity-line {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 .picture-sign__town {
   position: absolute;
@@ -64,4 +81,63 @@
   background-size: 16px;
 }
 
+@media (max-width: 1301px) {
+  .visit-card {
+    margin: 0 20px;
+  }
+
+  .top-places__container {
+    padding: 0 40px;
+  }
+
+  .top-places__title {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 915px) {
+  .visit-card {
+    margin: 0 20px;
+  }
+
+  .top-places__container {
+    padding: 0;
+  }
+
+  .top-places__title {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 835px) {
+  .top-places__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-places__title {
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  .visit-card {
+    max-width: 835px;
+  }
+
+  .visit-card__picture {
+    width: 100%;
+  }
+
+  .picture-sign__opacity-line {
+    width: 100%;
+    height: 55px;
+  }
+}
+@media (max-width: 400px) {
+  .picture-sign__town {
+    left: 20px;
+  }
+
+  .picture-sign__likes-comments {
+    right: 20px;
+  }
+}
 /* TOP PLACES - END */

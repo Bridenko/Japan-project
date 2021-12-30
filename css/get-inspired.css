@@ -1,10 +1,5 @@
 /* GET INSPIRED - START */
-.main {
-  width: 100vw;
-}
-
 .main-container {
-  width: 100%;
   max-width: 1262px;
   margin: 0 auto;
 }
@@ -12,15 +7,48 @@
 .get-inspired__heading {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.get-inspired__title {
+  line-height: 42px;
+  padding-right: 25px;
 }
 .get-inspired__picture {
   position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  box-shadow: 0 0 10px #7e7e7e;
+}
+.get-inspired__button-arrow {
+  margin-bottom: 50px;
+}
+.get-inspired__link {
+  display: block;
+  padding-right: 70px;
+  color: #006DFE;
+  background: url(../img/about_ico_share.svg) 100px 8px no-repeat;
+  transition: transform 0.3s;
+}
+.get-inspired__link:hover {
+  transform: scale(1.1, 1);
+  transition: transform 0.3s;
+}
+
+.picture-img {
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+
+.picture-img:hover {
+  transform: scale(1.07);
+  transition: transform 0.3s;
 }
 
 .two-picture {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
 }
 
 .is-position {
@@ -36,4 +64,44 @@
   margin-bottom: 131px;
 }
 
+@media (max-width: 1302px) {
+  .get-inspired {
+    padding: 0 20px;
+  }
+
+  .two-picture {
+    flex-direction: column;
+  }
+
+  .three-picture {
+    flex-direction: column;
+  }
+
+  .picture-img {
+    width: 100%;
+  }
+}
+@media (max-width: 1261px) {
+  .get-inspired {
+    margin-top: 120px;
+  }
+}
+@media (max-width: 730px) {
+  .get-inspired {
+    margin-top: 50px;
+  }
+
+  .three-picture {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 360px) {
+  .is-fs-small {
+    font-size: 35px;
+  }
+
+  .is-position {
+    bottom: 20px;
+  }
+}
 /* GET INSPIRED - END */
