@@ -6,9 +6,13 @@
     display: flex;
     justify-content: space-between;
     
+    
+    
     margin-bottom: 58px;
 
     &__picture {
+        
+        max-height: 354px;
         border-radius: 7px;
         box-shadow: 0 0 10px rgb(126, 126, 126);
     }
@@ -34,7 +38,7 @@
         color: #006DFE;
         background: url(../img/about_ico_share.svg) 172px 8px no-repeat;
 
-        transition: 0.5s;
+        transition: 0.2s;
     }
 
     &__link-2 {
@@ -43,19 +47,19 @@
         color: #006DFE;
         background: url(../img/about_ico_share.svg) 208px 8px no-repeat;
 
-        transition: 0.5s;
+        transition: 0.2s;
     }
 
     &__link-1:hover {
         background: url(../img/about_ico_share.svg) 187px 8px no-repeat;
         letter-spacing: 1px;
-        transition: 0.3s;
+        transition: 0.2s;
     }
     
     &__link-2:hover {
         background: url(../img/about_ico_share.svg) 223px 8px no-repeat;
         letter-spacing: 1px;
-        transition: 0.3s;
+        transition: 0.2s;
     }
 }
 

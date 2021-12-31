@@ -51,14 +51,14 @@
         border-radius: 5px;
         color: white;
         box-shadow: 2px 4px 10px grey;
-        transition: .3s;
+        transition: .2s;
         display: inline-block;
     }
 
     &__link:hover {
         background-color: #003375;
         color: white;
-        transition: .3s;
+        transition: .2s;
         transform: scale(1.15, 1.15);
     }
 }

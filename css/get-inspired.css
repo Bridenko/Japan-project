@@ -29,11 +29,11 @@
   padding-right: 70px;
   color: #006DFE;
   background: url(../img/about_ico_share.svg) 100px 8px no-repeat;
-  transition: transform 0.3s;
+  transition: transform 0.2s;
 }
 .get-inspired__link:hover {
   transform: scale(1.1, 1);
-  transition: transform 0.3s;
+  transition: transform 0.2s;
 }
 
 .picture-img {
