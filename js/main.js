@@ -44,7 +44,6 @@
 
 /* Scroll for item menu - start */
 
-// Scroll to anchors
 (function () {
 
     const smoothScroll = function (targetEl, duration) {
