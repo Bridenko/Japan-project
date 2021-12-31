@@ -170,7 +170,9 @@ header {
         top: 30px;
         right: 20px;
     }
-
+    .main-menu__item:hover {
+        border-bottom: 1px solid rgba(112, 112, 112, 0);
+    }
 }
 @media (max-height: 700px) {
     .main-menu__close {
