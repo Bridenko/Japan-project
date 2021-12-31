@@ -124,11 +124,12 @@ header {
 
   .main-menu__list {
     flex-direction: column;
+    align-items: flex-end;
   }
 
   .main-menu__item {
     margin-left: 0px;
-    display: block;
+    display: inline-block;
     margin-bottom: 40px;
     font-size: 25px;
     text-align: end;
