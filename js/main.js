@@ -31,12 +31,20 @@
     const burgerItem = document.querySelector('.burger');
     const menu = document.querySelector('.main-menu');
     const menuCloseItem = document.querySelector('.main-menu__close');
+    const menuLinks = document.querySelectorAll('.main-menu__item');
     burgerItem.addEventListener('click', () => {
         menu.classList.add('main-menu__active')
     });
     menuCloseItem.addEventListener('click', () => {
         menu.classList.remove('main-menu__active')
     });
+    if (window.innerWidth <= 750) {
+        for (let i = 0; i < menuLinks.length; i += 1) {
+            menuLinks[i].addEventListener('click', () => {
+                menu.classList.remove('main-menu__active');
+            });
+        };
+    };
 } () );
 
 /* Burger menu - end */
