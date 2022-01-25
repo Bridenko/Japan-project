@@ -57,7 +57,7 @@ header {
 .main-menu__item:hover {
   opacity: 1;
   color: white;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #707070;
   border-radius: 25px;
   transition: 0.2s;
 }
@@ -150,6 +150,7 @@ header {
   }
 }
 /* HEADER - END */
+
 /* DISCOVER AMAZING - START */
 .discover-amazing {
   max-width: 1062px;
