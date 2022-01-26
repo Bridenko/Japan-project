@@ -1,0 +1,159 @@
+
+
+/* DISCOVER AMAZING - START */
+
+.discover-amazing {
+    
+    max-width: 1062px;
+    margin: 0 auto;
+    
+
+	&__title {
+        padding-top: 230px;
+        margin-bottom: 22px;
+	}
+	
+	&__text {
+        max-width: 546px;
+        margin-bottom: 60px;
+        font-weight: 600;
+        color: white;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        text-shadow: rgb(0, 0, 0) 0px 0 5px;
+	}
+	
+	&__input-form {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+	}
+
+}
+
+
+.background-picture {
+    
+    top: 0px;
+    
+    
+    
+    background: url(../img/1b_bg.jpg) no-repeat top;
+    min-height: 100vh;
+    background-size: cover;
+    
+}
+
+.main-title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: white;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+
+.is-text-shadow {
+
+}
+
+.text-input-field {
+    width: 220px;
+    padding-top: 15px;
+
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+
+    background: transparent;
+    
+    &::placeholder {
+        color: white;
+    }
+}
+
+.is-input-weight {
+    width: 211px;
+}
+
+.input-your-like {
+    margin-right: 60px;
+    margin-bottom: 10px;
+    
+    padding-bottom: 15px;
+
+    text-indent: 35px;
+
+    border: 0px;
+    border-bottom: 2px solid rgb(158, 158, 158);
+    background: url(../img/circle-ico.svg) 0px 17px no-repeat;
+
+    transition: .2s;
+}
+
+
+.input-your-like:hover {
+    border-bottom: 2px solid white;
+    transition: .2s;
+}
+
+.input-button {
+    
+}
+
+.button {
+    
+    padding: 15px 39px;
+    margin-bottom: 80px;
+
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 2px 1px 4px rgb(90, 90, 90);
+
+    color: white;
+    background-color: #1B7DFF;
+    border-radius: 5px;
+    
+    
+    transition: .2s;
+    
+}
+
+.button:hover {
+    transform: scale(1.1, 1.1);
+    transition: .2s;
+}
+
+.button:active {
+    background-color: #145bb8;
+}
+
+@media (max-width: 1102px) {
+    .discover-amazing {
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width: 870px) {
+    .button {
+        margin-top: 20px;
+        
+    }
+}
+
+
+
+@media (max-height: 815px) {
+    .discover-amazing__title {
+        padding-top: 180px;  
+    }
+}
+
+@media (max-width: 500px) {
+    .discover-amazing__title {
+        padding-top: 130px;
+    }
+    .discover-amazing__text {
+        margin-bottom: 60px;
+    }
+}
+/* DISCOVER AMAZING - END */

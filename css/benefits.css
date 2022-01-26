@@ -1,0 +1,129 @@
+/* BENEFITS - START */
+.benefits {
+  transform: translateY(-140px);
+  max-width: 1262px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 7px #8a8a8a;
+  border-radius: 10px;
+}
+
+.benefits-container {
+  padding: 100px 100px 0px 100px;
+}
+
+.benefits-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 42px;
+}
+
+.title {
+  margin-bottom: 120px;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.benefits-articles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits-article {
+  padding-right: 55px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.benefits-article:last-child {
+  padding-right: 0px;
+}
+
+.benefits-icon {
+  margin-bottom: 37px;
+}
+
+.article-title {
+  text-align: start;
+  margin-bottom: 26px;
+}
+
+.benefits-text {
+  margin-bottom: 39px;
+  max-width: 317px;
+  align-self: auto;
+  flex: 1 1 auto;
+}
+
+.button-arrow__link {
+  display: block;
+  transition: letter-spacing 0.3s;
+  transition: 0.2s;
+  color: #006DFE;
+  background: url(../img/about_ico_share.svg) 130px 8px no-repeat;
+}
+.button-arrow__link:hover {
+  background: url(../img/about_ico_share.svg) 140px 8px no-repeat;
+  letter-spacing: 1px;
+  transition: letter-spacing 0.2s;
+  transition: 0.2s;
+}
+
+@media (max-height: 820px) {
+  .benefits {
+    transform: none;
+    margin-bottom: 50px;
+    border-radius: 0 0 10px 10px;
+  }
+}
+@media (max-width: 1302px) {
+  .benefits {
+    box-shadow: 0 0 5px #8a8a8a;
+    border-radius: 0px;
+  }
+}
+@media (max-width: 1261px) {
+  .benefits {
+    transform: none;
+  }
+}
+@media (max-width: 955px) {
+  .benefits-container {
+    padding: 50px 30px 0px 30px;
+  }
+
+  .benefits-article {
+    padding-right: 30px;
+    padding-bottom: 50px;
+  }
+
+  .benefits-articles {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 730px) {
+  .benefits-articles {
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .benefits-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .benefits-text {
+    max-width: 100%;
+  }
+
+  .benefits-article {
+    padding-right: 0px;
+  }
+
+  .title {
+    margin-bottom: 50px;
+  }
+}
+/* BENEFITS - END */
