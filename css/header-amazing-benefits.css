@@ -27,7 +27,6 @@ header {
   padding-bottom: 30px;
   z-index: 99;
   width: 100%;
-  margin-bottom: 177px;
   border-color: black;
   transition: 0.2s linear;
 }
@@ -150,7 +149,6 @@ header {
   }
 }
 /* HEADER - END */
-
 /* DISCOVER AMAZING - START */
 .discover-amazing {
   max-width: 1062px;

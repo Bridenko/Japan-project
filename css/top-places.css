@@ -19,7 +19,19 @@
   margin-bottom: 45px;
   color: white;
 }
+.visit-card__visual-part:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 55px;
+  background: rgba(21, 24, 36, 0.6);
+  border-radius: 0px 0px 7px 7px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 3;
+}
 .visit-card__picture {
+  width: 100%;
   border-radius: 7px;
   box-shadow: 0 0 10px #7e7e7e;
 }
@@ -46,27 +58,17 @@
   transform: scale(1.15, 1.15);
 }
 
-.picture-sign__opacity-line {
-  border-radius: 0 0 7px 7px;
-}
-
 .picture-sign {
-  display: flex;
-}
-.picture-sign__opacity-line {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-}
-.picture-sign__town {
   position: absolute;
   bottom: 15px;
-  left: 35px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  z-index: 4;
 }
 .picture-sign__likes-comments {
-  position: absolute;
-  bottom: 15px;
-  right: 25px;
   display: flex;
 }
 .picture-sign__likes {
@@ -124,20 +126,6 @@
 
   .visit-card__picture {
     width: 100%;
-  }
-
-  .picture-sign__opacity-line {
-    width: 100%;
-    height: 55px;
-  }
-}
-@media (max-width: 400px) {
-  .picture-sign__town {
-    left: 20px;
-  }
-
-  .picture-sign__likes-comments {
-    right: 20px;
   }
 }
 /* TOP PLACES - END */
