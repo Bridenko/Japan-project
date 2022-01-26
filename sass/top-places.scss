@@ -28,8 +28,9 @@
     &__visual-part {
         position: relative;
         margin-bottom: 45px;
-        
+        overflow: hidden;
         color: white;
+        border-radius: 7px;
     }
     &__visual-part:before {
         content: '';
@@ -41,7 +42,9 @@
         bottom: 0px;
         left: 0px;
         z-index: 3;
+        transition: 0.3s;
     }
+    
     &__picture {
         
         width: 100%;
@@ -76,9 +79,10 @@
     }
 }
 
+
 .picture-sign {
     position: absolute;
-    bottom: 15px;
+    bottom: 16px;
     left: 0px;
     width: 100%;
     display: flex;
