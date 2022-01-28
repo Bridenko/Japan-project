@@ -1,11 +1,18 @@
 
 /* PHOTO AND ARTICLE - START */
+.prefecture {
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
 
+.prefecture-container:last-child {
+    margin-bottom: 0px;
+}
 .photo-and-article {
 
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
     
     
     margin-bottom: 58px;

@@ -31,9 +31,12 @@ header {
   transition: 0.2s linear;
 }
 
-.header-wrapper {
+.content-wrapper {
   max-width: 1062px;
   margin: 0 auto;
+}
+
+.header-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

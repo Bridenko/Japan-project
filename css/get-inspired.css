@@ -1,9 +1,9 @@
 /* GET INSPIRED - START */
-.main-container {
-  max-width: 1262px;
-  margin: 0 auto;
+.get-inspired {
+  background-color: rgba(178, 221, 178, 0.2);
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-
 .get-inspired__heading {
   display: flex;
   justify-content: space-between;
@@ -61,12 +61,11 @@
 .three-picture {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 131px;
 }
 
 @media (max-width: 1302px) {
   .get-inspired {
-    padding: 0 20px;
+    padding: 50px 20px;
   }
 
   .two-picture {
@@ -88,11 +87,8 @@
 }
 @media (max-width: 730px) {
   .get-inspired {
-    margin-top: 50px;
-  }
-
-  .three-picture {
-    margin-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 360px) {

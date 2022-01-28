@@ -1,8 +1,9 @@
 /* DISCOVER AMAZING - START */
-.discover-amazing {
-  max-width: 1062px;
+.section-container {
+  max-width: 1262px;
   margin: 0 auto;
 }
+
 .discover-amazing__title {
   padding-top: 230px;
   margin-bottom: 22px;

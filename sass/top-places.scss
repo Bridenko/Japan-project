@@ -2,13 +2,15 @@
 /* TOP PLACES - START */
 
 .top-places {
-
+    
+    padding-top: 100px;
+    padding-bottom: 100px;
     &__title {
-        margin-top: 150px;
+        
         line-height: 42px;
     }
 
-    &__container {
+    &__content {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -154,6 +156,10 @@
     }
     .visit-card__picture {
         width: 100%;
+    }
+    .top-places {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
 

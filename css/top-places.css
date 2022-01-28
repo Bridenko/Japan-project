@@ -1,9 +1,12 @@
 /* TOP PLACES - START */
+.top-places {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 .top-places__title {
-  margin-top: 150px;
   line-height: 42px;
 }
-.top-places__container {
+.top-places__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -129,6 +132,11 @@
 
   .visit-card__picture {
     width: 100%;
+  }
+
+  .top-places {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 /* TOP PLACES - END */
