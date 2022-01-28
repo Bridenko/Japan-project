@@ -87,6 +87,11 @@
 @media (max-width: 955px) {
   .benefits-article {
     padding-right: 30px;
+    padding-bottom: 70px;
+  }
+
+  .benefits-container {
+    padding-bottom: 30px;
   }
 
   .benefits-articles {
@@ -111,7 +116,7 @@
     max-width: 500px;
     margin: 0 auto;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
   }
 
   .benefits-text {
