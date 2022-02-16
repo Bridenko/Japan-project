@@ -60,14 +60,32 @@
   transition: 0.2s;
   color: #006DFE;
   background: url(../img/about_ico_share.svg) 130px 8px no-repeat;
+  -webkit-animation: arrowRight 1s ease-in-out infinite alternate 1s;
+          animation: arrowRight 1s ease-in-out infinite alternate 1s;
+  transition: 0.3s;
 }
 .button-arrow__link:hover {
-  background: url(../img/about_ico_share.svg) 140px 8px no-repeat;
-  letter-spacing: 1px;
-  transition: letter-spacing 0.2s;
-  transition: 0.2s;
+  letter-spacing: 0.7px;
+  transition: 0.3s;
 }
 
+@-webkit-keyframes arrowRight {
+  0% {
+    background: url(../img/about_ico_share.svg) 130px 8px no-repeat;
+  }
+  100% {
+    background: url(../img/about_ico_share.svg) 150px 8px no-repeat;
+  }
+}
+
+@keyframes arrowRight {
+  0% {
+    background: url(../img/about_ico_share.svg) 130px 8px no-repeat;
+  }
+  100% {
+    background: url(../img/about_ico_share.svg) 150px 8px no-repeat;
+  }
+}
 @media (max-width: 1302px) {
   .benefits {
     box-shadow: 0 0 5px #8a8a8a;

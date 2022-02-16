@@ -23,6 +23,15 @@
   overflow: hidden;
   color: white;
   border-radius: 7px;
+  box-shadow: 0 0 10px #7e7e7e;
+  transition: 0.5s ease-in-out;
+}
+.visit-card__visual-part:hover .picture-sign {
+  bottom: 44%;
+  transition: bottom 0.7s cubic-bezier(1, -0.29, 0.18, 1.37), padding 0.5s ease-in-out;
+  padding: 10px 15%;
+  border-top: 1px solid #9e9e9e;
+  border-bottom: 1px solid #9e9e9e;
 }
 .visit-card__visual-part:before {
   content: "";
@@ -34,7 +43,11 @@
   bottom: 0px;
   left: 0px;
   z-index: 3;
-  transition: 0.3s;
+  transition: 0.8s ease-in-out;
+}
+.visit-card__visual-part:hover::before {
+  height: 100%;
+  transition: height 0.2s ease-in-out;
 }
 .visit-card__picture {
   width: 100%;
@@ -48,6 +61,11 @@
 .visit-card__button {
   margin-bottom: 62px;
 }
+.visit-card__link:hover {
+  padding: 12px 50px;
+  background-color: #003375;
+  transition: padding 0.6s cubic-bezier(0.53, -0.91, 0.5, 1.81), background-color 0.3s ease-in 0.5s;
+}
 .visit-card__link {
   padding: 12px 19px;
   background-color: #006DFE;
@@ -56,14 +74,8 @@
   box-shadow: 2px 4px 10px grey;
   transition: 0.2s;
   display: inline-block;
+  transition: padding 0.6s cubic-bezier(0.53, -0.91, 0.5, 1.81), background-color 0.3s ease-in 0.5s;
 }
-.visit-card__link:hover {
-  background-color: #003375;
-  color: white;
-  transition: 0.2s;
-  transform: scale(1.15, 1.15);
-}
-
 .picture-sign {
   position: absolute;
   bottom: 16px;
@@ -72,7 +84,13 @@
   display: flex;
   justify-content: space-between;
   padding: 0px 20px;
+  border-top: 1px solid rgba(158, 158, 158, 0);
+  border-bottom: 1px solid rgba(158, 158, 158, 0);
+  transition: bottom 0.7s cubic-bezier(1, -0.29, 0.18, 1.37), padding 0.5s ease-in-out;
   z-index: 4;
+}
+.picture-sign__town {
+  padding-right: 20px;
 }
 .picture-sign__likes-comments {
   display: flex;

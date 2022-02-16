@@ -29,11 +29,23 @@
 
     &__visual-part {
         position: relative;
+        
         margin-bottom: 45px;
         overflow: hidden;
         color: white;
         border-radius: 7px;
+        box-shadow: 0 0 10px rgb(126, 126, 126);
+        transition: 0.5s ease-in-out;
     }
+    &__visual-part:hover .picture-sign {
+        
+        bottom: 44%;
+        transition: bottom 0.7s cubic-bezier(1,-0.29,.18,1.37), padding 0.5s ease-in-out;
+        padding: 10px 15%;
+        border-top: 1px solid rgb(158, 158, 158);
+        border-bottom: 1px solid rgb(158, 158, 158);
+    }
+   
     &__visual-part:before {
         content: '';
         position: absolute;
@@ -44,9 +56,12 @@
         bottom: 0px;
         left: 0px;
         z-index: 3;
-        transition: 0.3s;
+        transition: 0.8s ease-in-out;
     }
-    
+    &__visual-part:hover::before {
+        height: 100%;
+        transition: height 0.2s ease-in-out;
+    }
     &__picture {
         
         width: 100%;
@@ -62,7 +77,11 @@
     &__button {
         margin-bottom: 62px;
     }
-
+    &__link:hover {
+        padding: 12px 50px;
+        background-color: #003375;
+        transition: padding 0.6s cubic-bezier(.53,-0.91,.5,1.81), background-color 0.3s ease-in 0.5s;
+    }
     &__link {
         padding: 12px 19px;
         background-color: #006DFE;
@@ -71,13 +90,14 @@
         box-shadow: 2px 4px 10px grey;
         transition: .2s;
         display: inline-block;
+        transition: padding 0.6s cubic-bezier(.53,-0.91,.5,1.81), background-color 0.3s ease-in 0.5s;
     }
 
     &__link:hover {
-        background-color: #003375;
-        color: white;
-        transition: .2s;
-        transform: scale(1.15, 1.15);
+        // background-color: #003375;
+        // color: white;
+        // transition: .2s;
+        // transform: scale(1.15, 1.15);
     }
 }
 
@@ -90,10 +110,13 @@
     display: flex;
     justify-content: space-between;
     padding: 0px 20px;
+    border-top: 1px solid rgba(158, 158, 158, 0);
+    border-bottom: 1px solid rgba(158, 158, 158, 0);
+    transition: bottom 0.7s cubic-bezier(1,-0.29,.18,1.37), padding 0.5s ease-in-out;
     z-index: 4;
 
     &__town {
-        
+        padding-right: 20px;
         
     }
 
