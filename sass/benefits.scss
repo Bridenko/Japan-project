@@ -71,6 +71,7 @@
         transition: .2s;
         color: #006DFE;
         background: url(../img/about_ico_share.svg) 130px 8px no-repeat;
+        background-color: transparent;
         animation: arrowRight 1s ease-in-out infinite alternate 1s;
         transition: 0.3s;
 	}
@@ -78,7 +79,10 @@
     &__link:hover {
         letter-spacing: .7px;
         transition: 0.3s;
+        background-color: transparent;
+        -webkit-appearance: none;
     }
+    
 }
 
 @keyframes arrowRight {
