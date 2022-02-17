@@ -24,15 +24,12 @@
   color: white;
   border-radius: 7px;
   box-shadow: 0 0 10px #7e7e7e;
-  transition: bottom 0.7s cubic-bezier(1, -0.29, 0.18, 1.37), padding 0.7s ease-in-out;
+  transition: bottom 0.7s cubic-bezier(0, -0.01, 0.37, 1.36), border 0.7s ease-in-out;
 }
 .visit-card__visual-part:hover .picture-sign {
   bottom: 44%;
-  transition: bottom 0.7s cubic-bezier(1, -0.29, 0.18, 1.37), padding 0.7s ease-in-out;
-  -webkit-transition: bottom 0.7s cubic-bezier(1, -0.29, 0.18, 1.37), padding 0.7s ease-in-out;
-  -moz-transition: bottom 0.7s cubic-bezier(1, -0.29, 0.18, 1.37), padding 0.7s ease-in-out;
-  -ms-transition: bottom 0.7s cubic-bezier(1, -0.29, 0.18, 1.37), padding 0.7s ease-in-out;
-  padding: 10px 15%;
+  transition: bottom 0.7s cubic-bezier(0, -0.01, 0.37, 1.36), border 0.7s ease-in-out;
+  padding: 10px 20px;
   border-top: 1px solid #9e9e9e;
   border-bottom: 1px solid #9e9e9e;
 }
@@ -89,7 +86,7 @@
   padding: 0px 20px;
   border-top: 1px solid rgba(158, 158, 158, 0);
   border-bottom: 1px solid rgba(158, 158, 158, 0);
-  transition: bottom 0.7s cubic-bezier(1, -0.29, 0.18, 1.37), padding 0.7s ease-in-out;
+  transition: bottom 0.7s cubic-bezier(0, -0.01, 0.37, 1.36), border 0.7s ease-in-out;
   z-index: 4;
 }
 .picture-sign__town {
