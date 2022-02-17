@@ -35,12 +35,12 @@
         color: white;
         border-radius: 7px;
         box-shadow: 0 0 10px rgb(126, 126, 126);
-        transition: 0.5s ease-in-out;
+        transition: bottom 0.7s cubic-bezier(1,-0.29,.18,1.37), padding 0.5s ease-in-out 0.2s;
     }
     &__visual-part:hover .picture-sign {
         
         bottom: 44%;
-        transition: bottom 0.7s cubic-bezier(1,-0.29,.18,1.37), padding 0.5s ease-in-out;
+        transition: bottom 0.7s cubic-bezier(1,-0.29,.18,1.37), padding 0.5s ease-in-out 0.2s;
         padding: 10px 15%;
         border-top: 1px solid rgb(158, 158, 158);
         border-bottom: 1px solid rgb(158, 158, 158);
@@ -112,7 +112,7 @@
     padding: 0px 20px;
     border-top: 1px solid rgba(158, 158, 158, 0);
     border-bottom: 1px solid rgba(158, 158, 158, 0);
-    transition: bottom 0.7s cubic-bezier(1,-0.29,.18,1.37), padding 0.5s ease-in-out;
+    transition: bottom 0.7s cubic-bezier(1,-0.29,.18,1.37), padding 0.5s ease-in-out 0.2s;
     z-index: 4;
 
     &__town {
