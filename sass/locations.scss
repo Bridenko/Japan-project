@@ -1,0 +1,129 @@
+.locations {}
+
+.section-container {}
+
+.locations-container {}
+
+.locations-content {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 7px #8a8a8a;
+}
+
+.tab-content {
+
+    &.tab-hide {
+        display: none;
+    }
+
+    &.tab-show {
+        display: block;
+    }
+}
+
+.tab-content img {
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.tab-menu {
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    &__item {
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: white;
+        background: rgb(126, 126, 126);
+        transition: ease-in-out 0.3s;
+
+        &.is-tab-active {
+            background: rgb(27, 72, 78);
+            font-weight: 700;
+            letter-spacing: 4px;
+            transition: ease-in-out 0.3s;
+        }
+    }
+}
+
+.tab-start {
+    animation: tab-start 0.4s ease-in-out;
+}
+
+.tab-end {
+    animation: tab-end 0.4s ease-in-out;
+}
+
+.picture-effect {}
+
+@keyframes tab-start {
+    0% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes tab-end {
+    0% {
+        opacity: 1.0;
+    }
+
+    100% {
+        opacity: 0.4;
+    }
+}
+
+@media (max-width: 1302px) {
+    .locations-container {
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width: 1261px) {
+    .locations-container {
+        margin-top: 120px;
+    }
+
+}
+
+@media (max-width: 1150px) {
+    .tab-menu {
+        &__list {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2px;
+        }
+        &__item {
+            font-size: 14px;
+            padding: 2px;
+        }
+    }
+    .tab-content img {
+        height: 500px;
+    }
+}
+
+@media (max-width: 650px) {
+    .tab-content img {
+        height: 350px;
+    }
+    .locations-container {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 460px) {
+    .tab-content img {
+        height: 200px;
+    }
+}

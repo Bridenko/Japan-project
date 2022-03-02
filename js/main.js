@@ -1,4 +1,6 @@
-/* Header background - start */
+
+
+// Header background - start
 
 ( function () {
     const header = document.querySelector('.header');
@@ -20,7 +22,7 @@
 
         if (window.pageYOffset > 40) { header.classList.add ('js-item-border-opacity-50'); }
         else { header.classList.remove ('js-item-border-opacity-50'); }
-    }
+    };
 } () );
 
 /* Header background - end */
@@ -33,18 +35,18 @@
     const menuCloseItem = document.querySelector('.main-menu__close');
     const menuLinks = document.querySelectorAll('.main-menu__item');
     burgerItem.addEventListener('click', () => {
-        menu.classList.add('main-menu__active')
+        menu.classList.add('main-menu__active');
     });
     menuCloseItem.addEventListener('click', () => {
-        menu.classList.remove('main-menu__active')
+        menu.classList.remove('main-menu__active');
     });
     if (window.innerWidth <= 750) {
         for (let i = 0; i < menuLinks.length; i += 1) {
             menuLinks[i].addEventListener('click', () => {
                 menu.classList.remove('main-menu__active');
             });
-        };
-    };
+        }
+    }
 } () );
 
 /* Burger menu - end */
@@ -93,6 +95,41 @@
 
 /* Scroll for item menu - end */
 
+// Tabs - (section - locations) - start
 
+window.addEventListener('DOMContentLoaded', () => {
+    const tabButton = document.querySelectorAll('.tab-menu__item');
+    const tabParrent = document.querySelector('.tab-menu__list');
+    const tabContent = document.querySelectorAll('.tab-content');
 
+    function hideTabContent() {
+        tabContent.forEach(item => {
+            item.classList.add('tab-hide', 'tab-end');
+            item.classList.remove('tab-show', 'tab-start');
+        });
+        tabButton.forEach(item => {
+            item.classList.remove('is-tab-active');
+        });
+    }
 
+    function showTabContent(i = 2) {
+        tabContent[i].classList.add('tab-show', 'tab-start');
+        tabContent[i].classList.remove('tab-hide', 'tab-end');
+        tabButton[i].classList.add('is-tab-active');
+    }
+
+    hideTabContent();
+    showTabContent();
+
+    tabParrent.addEventListener('click', (event) => {
+        const target = event.target;
+        if (target && target.classList.contains('tab-menu__item')) {
+            tabButton.forEach((item, i) => {
+                if (target == item) {
+                    hideTabContent();
+                    showTabContent(i);
+                }
+            });
+        }
+    });
+});

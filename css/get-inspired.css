@@ -79,7 +79,7 @@
 
 @media (max-width: 1302px) {
   .get-inspired {
-    padding: 50px 20px;
+    padding: 100px 20px;
   }
 
   .two-picture {
@@ -92,11 +92,6 @@
 
   .picture-img {
     width: 100%;
-  }
-}
-@media (max-width: 1261px) {
-  .get-inspired {
-    margin-top: 120px;
   }
 }
 @media (max-width: 730px) {

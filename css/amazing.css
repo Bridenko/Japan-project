@@ -62,17 +62,13 @@
   color: white;
 }
 
-.is-input-weight {
-  width: 211px;
-}
-
 .input-your-like {
   margin-right: 60px;
   margin-bottom: 10px;
   padding-bottom: 15px;
   text-indent: 35px;
   border: 0px;
-  border-bottom: 2px solid #7a7a7a;
+  border-bottom: 2px solid #5c5c5c;
   background: url(../img/circle-ico.svg) 0px 17px no-repeat;
   -webkit-animation: borderLight 1s ease-in-out infinite alternate 1s;
           animation: borderLight 1s ease-in-out infinite alternate 1s;
