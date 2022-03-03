@@ -4,6 +4,52 @@
   margin: 0 auto;
 }
 
+.background-picture {
+  position: relative;
+  top: 0px;
+  height: 900px;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.background-picture img {
+  top: 0px;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-animation: bg-breath 1.5s ease-in-out infinite alternate 0s;
+          animation: bg-breath 1.5s ease-in-out infinite alternate 0s;
+}
+
+@-webkit-keyframes bg-breath {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes bg-breath {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+.discover-amazing {
+  position: absolute;
+  top: 0px;
+  max-width: 1262px;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .discover-amazing__title {
   padding-top: 230px;
   margin-bottom: 22px;
@@ -26,13 +72,6 @@
           animation: none;
   border-bottom: 2px solid white;
   transition: 0.7s;
-}
-
-.background-picture {
-  top: 0px;
-  background: url(../img/1b_bg.jpg) no-repeat top;
-  min-height: 100vh;
-  background-size: cover;
 }
 
 .main-title {
@@ -70,14 +109,14 @@
   border: 0px;
   border-bottom: 2px solid #5c5c5c;
   background: url(../img/circle-ico.svg) 0px 17px no-repeat;
-  -webkit-animation: borderLight 1s ease-in-out infinite alternate 1s;
-          animation: borderLight 1s ease-in-out infinite alternate 1s;
+  -webkit-animation: borderLight 1.5s ease-in-out infinite alternate 1s;
+          animation: borderLight 1.5s ease-in-out infinite alternate 1s;
   transition: 0.2s;
 }
 
 @-webkit-keyframes borderLight {
   0% {
-    border-bottom: 2px solid #7a7a7a;
+    border-bottom: 2px solid #5a5a5a;
   }
   100% {
     border-bottom: 2px solid white;
@@ -86,7 +125,7 @@
 
 @keyframes borderLight {
   0% {
-    border-bottom: 2px solid #7a7a7a;
+    border-bottom: 2px solid #5a5a5a;
   }
   100% {
     border-bottom: 2px solid white;

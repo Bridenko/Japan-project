@@ -1,8 +1,5 @@
 /* BENEFITS - START */
 .benefits {
-  transform: translateY(-140px);
-  width: 100%;
-  background-color: white;
   box-shadow: 0 0 7px #8a8a8a;
   border-radius: 10px;
 }
@@ -92,17 +89,12 @@
 @media (max-width: 1302px) {
   .benefits {
     box-shadow: 0 0 5px #8a8a8a;
-    border-radius: 0px;
+    margin: 0px 20px;
   }
 
   .benefits-container {
     padding-left: 20px;
     padding-right: 20px;
-  }
-}
-@media (max-width: 1261px) {
-  .benefits {
-    transform: none;
   }
 }
 @media (max-width: 955px) {
@@ -123,7 +115,6 @@
   .benefits {
     transform: none;
     margin-bottom: 50px;
-    border-radius: 0 0 10px 10px;
   }
 }
 @media (max-width: 730px) {
