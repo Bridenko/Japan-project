@@ -5,20 +5,21 @@
     margin: 0 auto;
 }
 .background-picture {
-    
     position: relative;
     top: 0px;
     height: 900px;
     overflow: hidden;
     min-height: 100vh;
-}
-.background-picture img {
-    top: 0px;
-    min-height: 100vh;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    animation: bg-breath 1.5s ease-in-out infinite alternate 0s;
+    &__img {
+        display: block;
+        position: relative;
+        top: 0px;
+        min-height: 100vh;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        animation: bg-breath 1.5s ease-in-out infinite alternate 0s;
+    }
 }
 @keyframes bg-breath {
     0% {
@@ -28,6 +29,24 @@
         transform: scale(1.05);
     }
 }
+.background-effect {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: black;
+    animation: background-effect 1.5s ease-in-out infinite alternate 0s;
+}
+@keyframes background-effect {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 .discover-amazing {
     position: absolute;
     top: 0px;
@@ -35,8 +54,9 @@
     width: 100%;
     min-height: 100vh;
     height: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
     &__title {
         padding-top: 230px;
         margin-bottom: 22px;
@@ -103,14 +123,14 @@
     border: 0px;
     border-bottom: 2px solid rgb(92, 92, 92);
     background: url(../img/circle-ico.svg) 0px 17px no-repeat;
-    animation: borderLight 1.5s ease-in-out infinite alternate 1s;
-    transition: 0.2s;
+    animation: borderLight 1.5s ease-in-out infinite alternate 0s;
+    
 }
 
 @keyframes borderLight {
     0% {
         
-        border-bottom: 2px solid rgb(90, 90, 90);
+        border-bottom: 2px solid rgb(61, 61, 61);
     }
 
     100% {

@@ -9,11 +9,25 @@
   box-shadow: 0 0 7px #8a8a8a;
 }
 
+.tab-content {
+  position: relative;
+}
 .tab-content.tab-hide {
   display: none;
 }
 .tab-content.tab-show {
   display: block;
+}
+
+.tab-content::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: black;
+  opacity: 0.2;
 }
 
 .tab-content img {
@@ -75,7 +89,7 @@
 
 @-webkit-keyframes tab-start {
   0% {
-    opacity: 0.4;
+    opacity: 0.65;
   }
   100% {
     opacity: 1;
@@ -84,7 +98,7 @@
 
 @keyframes tab-start {
   0% {
-    opacity: 0.4;
+    opacity: 0.65;
   }
   100% {
     opacity: 1;
@@ -95,7 +109,7 @@
     opacity: 1;
   }
   100% {
-    opacity: 0.4;
+    opacity: 0.65;
   }
 }
 @keyframes tab-end {
@@ -103,7 +117,7 @@
     opacity: 1;
   }
   100% {
-    opacity: 0.4;
+    opacity: 0.65;
   }
 }
 @media (max-width: 1302px) {
