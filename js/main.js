@@ -36,9 +36,11 @@
     const menuLinks = document.querySelectorAll('.main-menu__item');
     burgerItem.addEventListener('click', () => {
         menu.classList.add('main-menu__active');
+        document.body.style.overflow = 'hidden';
     });
     menuCloseItem.addEventListener('click', () => {
         menu.classList.remove('main-menu__active');
+        document.body.style.overflow = '';
     });
     if (window.innerWidth <= 750) {
         for (let i = 0; i < menuLinks.length; i += 1) {
