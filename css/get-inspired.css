@@ -12,6 +12,13 @@
 .get-inspired__title {
   line-height: 42px;
   padding-right: 25px;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0, 1.28, 0, 1.08) 0.3s;
+}
+.get-inspired__title.active-anim {
+  transform: translateX(0);
+  opacity: 1;
 }
 .get-inspired__picture {
   position: relative;

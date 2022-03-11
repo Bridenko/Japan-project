@@ -1,4 +1,3 @@
-
 /* PHOTO AND ARTICLE - START */
 .prefecture {
     padding-top: 80px;
@@ -16,8 +15,8 @@
     max-height: 354px;
     width: 100%;
     height: 100%;
-    
-    background-color: #cee3ff; 
+
+    background-color: #cee3ff;
     box-shadow: 0 0 10px rgb(126, 126, 126);
     border-radius: 7px;
 
@@ -28,9 +27,11 @@
         text-align: center;
         letter-spacing: 2px;
     }
+
     &__title span {
         font-weight: 700;
     }
+
     &__picture {
         position: absolute;
         top: 0px;
@@ -44,13 +45,14 @@
         object-fit: cover;
 
         border-radius: 7px;
-        
-        
-        
-        
+
+
+
+
         transition: 0.6s ease-in-out;
 
     }
+
     &__picture:hover {
         transform: translateY(50px);
         transition: 0.3s ease-in-out;
@@ -62,14 +64,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
+
+
     margin-bottom: 58px;
-    &__pic-wrapper {
-        
-        
-    }
-    
+
+    &__pic-wrapper {}
+
     &__article {
         max-width: 597px;
         padding: 40px;
@@ -79,10 +79,24 @@
         margin-bottom: 85px;
 
         line-height: 40px;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: all 1s cubic-bezier(0, 1.28, 0, 1.08) 0.3s;
+
+        &.active-anim {
+            transform: translateX(0);
+            opacity: 1;
+        }
     }
 
     &__text {
         margin-bottom: 58px;
+        opacity: 0;
+        transition: all 0.5s ease-in 0.5s;
+
+        &.active-anim {
+            opacity: 1;
+        }
     }
 
     &__link-1 {
@@ -103,40 +117,45 @@
         transition: 0.2s;
     }
 
-    &__link-1:hover, &__link-2:hover {
+    &__link-1:hover,
+    &__link-2:hover {
         letter-spacing: .7px;
         transition: 0.3s;
     }
-    
+
 }
 
 @keyframes arrowRightLink1 {
     0% {
         background: url(../img/about_ico_share.svg) 172px 8px no-repeat;
     }
+
     100% {
         background: url(../img/about_ico_share.svg) 192px 8px no-repeat;
     }
 }
+
 @keyframes arrowRightLink2 {
     0% {
         background: url(../img/about_ico_share.svg) 208px 8px no-repeat;
     }
+
     100% {
         background: url(../img/about_ico_share.svg) 228px 8px no-repeat;
     }
 }
+
 .sub-title {
     font-size: 30px;
     font-weight: 500;
 }
 
-.button-arrow {
+.button-arrow {}
 
-}
 .is-reverce {
     flex-direction: row-reverse;
 }
+
 @media (max-width: 1301px) {
     .photo-and-article {
         padding: 0 20px;
@@ -147,23 +166,25 @@
     .photo-and-article {
         flex-direction: column;
     }
-    
+
     .photo-and-article__article {
         max-width: 100%;
     }
-    
-    .pic-wrapper  {
+
+    .pic-wrapper {
         max-width: 1302px;
         max-height: 700px;
         width: 100%;
         height: 100%;
 
         object-fit: cover;
+
         &__title {
 
             height: 700px;
             object-fit: cover;
         }
+
         &__picture {
             max-width: 1302px;
             max-height: 700px;
@@ -171,34 +192,40 @@
             height: 100%;
         }
     }
-    .pic-wrapper__picture {
-        
-    }
+
+    .pic-wrapper__picture {}
 }
+
 @media (max-width: 730px) {
     .photo-and-article {
         margin-bottom: 0px;
     }
+
     .photo-and-article__title {
         margin-bottom: 30px;
     }
+
     .photo-and-article__text {
         margin-bottom: 30px;
     }
+
     .photo-and-article__article {
         padding: 20px 20px 60px 20px;
     }
-    .pic-wrapper  {
+
+    .pic-wrapper {
         max-width: 730px;
         max-height: 400px;
         width: 100%;
         height: 100%;
 
         object-fit: cover;
+
         &__title {
             height: 400px;
             object-fit: cover;
         }
+
         &__picture {
             max-width: 730px;
             max-height: 400px;
@@ -207,24 +234,28 @@
         }
     }
 }
+
 @media (max-width: 400px) {
     .pic-wrapper__title {
         font-size: 11px;
     }
 }
+
 @media (max-width: 375px) {
-    .pic-wrapper  {
+    .pic-wrapper {
         max-width: 350px;
         max-height: 200px;
         width: 100%;
         height: 100%;
 
         object-fit: cover;
+
         &__title {
             height: 200px;
             object-fit: cover;
             text-align: center;
         }
+
         &__picture {
             max-width: 350px;
             max-height: 200px;
@@ -238,11 +269,14 @@
     .photo-and-article__link-1 {
         background: url(../img/about_ico_share.svg) 162px 8px no-repeat;
     }
+
     .photo-and-article__link-2 {
         background: url(../img/about_ico_share.svg) 195px 8px no-repeat;
     }
+
     .photo-and-article__article {
         padding: 20px 0px 60px 0px;
     }
 }
+
 /* PHOTO AND ARTICLE - END */

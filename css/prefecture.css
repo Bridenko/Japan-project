@@ -62,9 +62,21 @@
 .photo-and-article__title {
   margin-bottom: 85px;
   line-height: 40px;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0, 1.28, 0, 1.08) 0.3s;
+}
+.photo-and-article__title.active-anim {
+  transform: translateX(0);
+  opacity: 1;
 }
 .photo-and-article__text {
   margin-bottom: 58px;
+  opacity: 0;
+  transition: all 0.5s ease-in 0.5s;
+}
+.photo-and-article__text.active-anim {
+  opacity: 1;
 }
 .photo-and-article__link-1 {
   display: block;

@@ -13,6 +13,13 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 42px;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0, 1.28, 0, 1.08) 0.3s;
+}
+.benefits-title.active-anim {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .title {
@@ -49,6 +56,11 @@
   max-width: 317px;
   align-self: auto;
   flex: 1 1 auto;
+  opacity: 0;
+  transition: all 0.7s ease-in 0.5s;
+}
+.benefits-text.active-anim {
+  opacity: 1;
 }
 
 .button-arrow__link {
